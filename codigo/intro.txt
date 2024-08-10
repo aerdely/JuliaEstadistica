@@ -1,1 +1,0 @@
-Código de programación en Julia para inferencia estadística.
