@@ -11,7 +11,7 @@
 Estima la función de distribución acumulativa `F(x) = P(X ≤ x)` de una
 variable aleatoria `X` a partir de un vector `muestra` de observaciones de `X`.
 Entrega una tupla etiquetada con los siguientes nombres:
-- `fda` la función de dstribución acumulativa estimada
+- `fda` la función de distribución acumulativa estimada
 - `min`, `max` mínimo y máximo muestrales
 - `mord` la muestra ordenada de menor a mayor
 
