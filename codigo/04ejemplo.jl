@@ -45,6 +45,7 @@ pdf(X, [0,1])
 
 # fmp teórica versus muestral
 @doc masaprob 
+
 Xm = masaprob(muestra);
 xx = collect(minimum(X):maximum(X))
 fmpTeórica = pdf(X, xx)
