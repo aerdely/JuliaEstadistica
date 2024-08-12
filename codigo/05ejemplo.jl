@@ -34,9 +34,10 @@ quantile(muestra, 1/2)
 
 # Función de distribución empírica versus teórica
 @doc distprob
+
 D = distprob(muestra);
 keys(D)
-xx = collect(range(D.min, D.max, length = 1_000))
+xx = collect(range(0.0, D.max, length = 1_000))
 plot(xx, D.fda.(xx), lw = 3, label = "empírica", color = :blue,
      xlabel = "x", ylabel = "F(x) = P(X ≤ x)",
      title = "Función de distribución de probabilidades"
@@ -47,6 +48,7 @@ savefig("05ejemploA.pdf")
 
 # Función de densidad empírica versus teórica
 @doc densprob
+
 d = densprob(muestra);
 plot(xx, d.fdp.(xx), lw = 3, label = "empírica", color = :blue,
      xlabel = "x", ylabel = "f(x)",
